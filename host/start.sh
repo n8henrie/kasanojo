@@ -5,7 +5,7 @@ set -e
 DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
 KASADIR=$DIR/../../kasa
 
-if [-z "$GOPATH" ]; then
+if [ -z "$GOPATH" ]; then
     echo "Error: Please set GOPATH"
     exit 1
 fi
